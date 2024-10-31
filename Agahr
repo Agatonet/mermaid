@@ -1,0 +1,31 @@
+graph TD
+    A[Decyzja o potrzebie zatrudnienia] --> B[Złożenie wniosku przez kierownika do HR]
+    B --> C{Analiza wniosku}
+    C -->|Poprawka| B
+    C -->|Akceptacja| D[Wycena stanowiska]
+    D --> E[Ustalenie miejsca publikacji]
+    E --> F[Przygotowanie ogłoszenia przez HR]
+    F --> G{Akceptacja kierownika inicjującego}
+    G -->|Akceptacja| H[Publikacja ogłoszenia]
+    H --> I[Zbieranie CV]
+    I --> J{Analiza CV}
+    J -->|Odrzucenie CV| I
+    J -->|Przekazanie dalej| K[Rozmowy z kandydatami]
+    K --> L{Wyłonienie kandydata}
+    L -->|Konsultacja i decyzja kierownika| M[Zaoferowanie kandydata]
+    M --> N[Przekazanie kandydata do działu kadr]
+    N --> O[Zatrudnienie]
+    O --> P[Onboarding]
+    P --> P1[Szkolenia (BHP, RODO, informacje niejawne)]
+    P --> P2[Przydzielenie opiekuna]
+    P --> P3[Przydzielenie sprzętu]
+    P --> P4[Dostępy do systemów]
+    P --> P5[Udzielenie upoważnień RODO]
+    P --> Q{Weryfikacja po 2 miesiącach}
+    Q -->|Pozytywny wynik testu| R[Kontynuacja umowy]
+    R --> R1[Przekazanie informacji o kontynuacji umowy]
+    Q -->|Negatywny wynik testu| S[HR informuje kierownika]
+    S --> T[Rozmowa z pracownikiem o rozwiązaniu umowy]
+    T --> U[Przygotowanie wypowiedzenia i świadectwa pracy]
+    U --> V[Podpisanie wypowiedzenia przez pracodawcę]
+    Q --> W[Archiwizacja testu w aktach osobowych]
